@@ -1,0 +1,31 @@
+.chartFrame {
+  display: grid;
+  grid-template-columns: 54px minmax(0, 1fr) 54px;
+  align-items: stretch;
+  margin-top: 24px;
+}
+
+.chartFrame .chart { margin-top: 0; }
+
+.yAxis {
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 1px;
+  color: var(--muted);
+  font-size: 9px;
+  font-variant-numeric: tabular-nums;
+}
+
+.leftAxis { text-align: right; padding-right: 9px; color: #A66C1C; }
+.rightAxis { padding-left: 9px; color: #238B79; }
+.chartHint { margin: 25px 54px 0; text-align: center; color: var(--muted); font-size: 9px; }
+
+@media (max-width: 680px) {
+  .chartFrame { grid-template-columns: 42px minmax(0, 1fr) 42px; }
+  .chartHint { margin-left: 42px; margin-right: 42px; }
+  .yAxis { font-size: 8px; }
+  .leftAxis { padding-right: 6px; }
+  .rightAxis { padding-left: 6px; }
+}
