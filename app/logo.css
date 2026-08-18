@@ -1,0 +1,30 @@
+.brand {
+  gap: 9px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.brand img {
+  display: block;
+  width: 82px;
+  height: 58px;
+  object-fit: contain;
+}
+
+.brand span {
+  padding-left: 9px;
+  border-left: 1px solid #cfc8bc;
+  white-space: nowrap;
+}
+
+@media (max-width: 520px) {
+  .brand img {
+    width: 68px;
+    height: 52px;
+  }
+
+  .brand span {
+    display: none;
+  }
+}

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./logo.css";
 
 export const metadata: Metadata = {
   title: "Cluttra LLC Demo – Csirke kohorszszimulátor",
@@ -8,8 +9,8 @@ export const metadata: Metadata = {
     "codex-preview": "development",
   },
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    icon: "/cluttra-logo.png",
+    shortcut: "/cluttra-logo.png",
   },
 };
 
